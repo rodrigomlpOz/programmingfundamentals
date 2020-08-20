@@ -17,6 +17,19 @@ int test(int x, int y)
    int n = 100;
    int val = abs(x - n);
    int val2 = abs(y - n);
-   return val == val2 ? 0 : (val < val2 ? x : y);
-        
+   if (val == val2)
+   {
+      return 0;
+   }
+   else
+   {
+      if (val < val2)
+      {
+         return x;
+      }
+      else
+      {
+         return y;
+      }
+   }
 }
