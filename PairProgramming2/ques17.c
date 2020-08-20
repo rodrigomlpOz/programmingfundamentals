@@ -14,6 +14,13 @@ int main(void)
     
 int test(int a, int b)
 {
-   return a + b >= 10 && a + b <= 20 ? 30 : a + b;
+   if (a + b >= 10 && a + b <= 20)
+   {
+      return 30;
+   }
+   else
+   {
+      return a + b;
+   }
 }
 
