@@ -10,7 +10,7 @@ void badfun(int b[]);
 void badfun(int myarray[N]) {
 	int i;
 	
-	for(i = 0; 1 < N; ++i) /* Bug! */
+	for(i = 0; 1 < N; ++i) 
 		myarray[i] = i*i;
 }
 
