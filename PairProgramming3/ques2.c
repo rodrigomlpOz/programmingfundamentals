@@ -36,13 +36,13 @@ int main()
    printf("\nThe values stored into the array are : \n");
    for(i = 0; i < n; i++)
    {
-	   printf("% 5d", a[i]);
+	   printf("%d", a[i]);
    }
 
    printf("\n\nThe values stored into the array in reverse are :\n");
    for(i = n-1; i >= 0;i--)
    {
-	   printf("% 5d", a[i]);
+	   printf("%d", a[i]);
    }
    printf("\n\n");
 }
