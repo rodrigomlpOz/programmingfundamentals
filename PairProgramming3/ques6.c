@@ -1,4 +1,5 @@
 /* Write a program in C to print all unique elements in an array.
+Prompt the user to enter the elements.
 
 Test Input Data :
 
@@ -23,7 +24,7 @@ int main()
 {
    int arr[100], n, count = 0, i, j, k;
 
-	printf("\n\nPrint all unique elements of an array:\n");
+   printf("\n\nPrint all unique elements of an array:\n");
    printf("---------------------------------------------------------\n");
 
    n = get_int("Input the number of elements to be stored in the array :");
@@ -31,8 +32,8 @@ int main()
    printf("Input %d elements in the array :\n",n);
    for(i = 0; i < n; i++)
    {
-	   arr[i] = get_int("element - %d : ", i);
-	}
+       arr[i] = get_int("element - %d : ", i);
+   }
 
    printf("\nThe unique elements found in the array are: \n");
 
@@ -44,7 +45,7 @@ int main()
          /*Increment the counter when the seaarch value is duplicate.*/
          if (i != j)
          {
-		      if (arr[i] == arr[j])
+            if (arr[i] == arr[j])
             {
                 count++;
             }
