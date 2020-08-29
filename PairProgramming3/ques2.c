@@ -1,6 +1,6 @@
 /* Write a program in C to read n number of values
    in an array and display it in reverse order. The program should prompt
-   the user to enter the no. of elements and store it in a variable named n.
+   the user to enter the elements.
 
 Test Input Data :
 
