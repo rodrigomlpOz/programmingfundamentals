@@ -1,4 +1,5 @@
 /* Write a program in C to count a total number of duplicate elements in an array.
+Prompt the user to enter the elements.
 
 Test Input Data :
 
@@ -18,7 +19,7 @@ int main()
 {
    int arr[100], n,count = 0, i, j;
 
-	printf("\n\nCount total number of duplicate elements in an array:\n");
+   printf("\n\nCount total number of duplicate elements in an array:\n");
    printf("---------------------------------------------------------\n");
 
    n = get_int("Input the number of elements to be stored in the array :");
@@ -26,8 +27,8 @@ int main()
    printf("Input %d elements in the array :\n",n);
    for(i = 0; i < n; i++)
    {
-	   arr[i] = get_int("element - %d : ", i);
-	}
+       arr[i] = get_int("element - %d : ", i);
+   }
 
    /*
     * Find all duplicate elements in array

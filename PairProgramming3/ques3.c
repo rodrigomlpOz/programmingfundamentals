@@ -1,4 +1,5 @@
 /* Write a program in C to find the sum of all elements of the array.
+   Prompt the user to enter the elements.
 
 Test Input Data :
 
@@ -18,7 +19,7 @@ int main()
 {
    int a[100], i, n, sum = 0;
 
-	printf("\nFind sum of all elements of array:\n");
+   printf("\nFind sum of all elements of array:\n");
    printf("--------------------------------------\n");
 
    n = get_int("Input the number of elements to be stored in the array :");
@@ -26,8 +27,8 @@ int main()
    printf("Input %d elements in the array :\n",n);
    for(i = 0; i < n; i++)
    {
-	   a[i] = get_int("element - %d : ", i);
-	}
+      a[i] = get_int("element - %d : ", i);
+   }
 
    for(i = 0; i < n; i++)
    {
