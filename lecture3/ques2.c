@@ -6,16 +6,16 @@
 #include <stdio.h>
 
 // create a structure named point
-struct Point
+typedef struct
 {
    int x, y;
-};
+}Point;
 
 
 int main()
 {
    // Create an array of structures
-   struct Point arr[10];
+   Point arr[10];
 
    // Access array members
    arr[0].x = 10;
