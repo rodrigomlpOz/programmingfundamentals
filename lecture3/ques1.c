@@ -7,17 +7,17 @@
 #include <cs50.h>
 
 // creating a structure named student data
-struct StudentData{
+typedef struct{
    string stu_name;
    int stu_id;
    int stu_age;
-};
+}studentData;
 
 
 int main()
 {
    /* student is the variable of structure StudentData*/
-   struct StudentData student;
+   studentData student;
 
    /*Assigning the values of each struct member here*/
    student.stu_name = "Steve";
