@@ -1,106 +1,59 @@
 /* Write a C program to check whether given square matrix is a Toeplitz matrix or not.
 A Toeplitz (or diagonal-constant) matrix is a matrix in which each descending diagonal
 from left to right is constant, i.e., all elements in a diagonal are same.
-
 Examples :
-
 Input: mat[N][N] = {{ 6, 7, 8},
                     { 4, 6, 7},
                     { 1, 4, 6}},
 Output : True;
 Values in all diagonals are same.
-
 Input: mat[N][N] = {{ 6, 7, 8, 9 },
                     { 4, 6, 7, 8 },
                     { 1, 4, 6, 7 },
                     { 0, 1, 4, 6 },
                     { 2, 0, 1, 4 }};
 Output : True;
-
 Input: mat[N][N] = {{ 6, 3, 8},
                     { 4, 9, 7},
                     { 1, 4, 6}},
 Output : False;
-
-
 */
-
 #include <stdio.h>
 #include <cs50.h>
 
-#define N 5
-#define M 4
+//Example tests, uncomment out one of the 3 following tests. 
+// #define exampleRows 3
+// #define exampleCols 3
+// #define example {{ 6, 7, 8}, { 4, 6, 7}, { 1, 4, 6}}
+//#define exampleRows 5
+//#define exampleCols 4
+//#define example {{ 6, 7, 8, 9 }, { 4, 6, 7, 8 },{ 1, 4, 6, 7 },{ 0, 1, 4, 6 }, { 2, 0, 1, 4 }}
+//#define exampleRows 3
+//#define exampleCols 3
+//#define example {{ 6, 3, 8},{ 4, 9, 7},{ 1, 4, 6}}
 
-
-/* Function to check if all elements present in descending diagonal starting from position
-  (i, j) in the matrix are all same or not */
-
-bool checkDiagonal(int mat[N][M], int i, int j)
+bool checkMatrix (int mat[exampleRows][exampleCols], int rowSize, int colSize);
+int main(void)
 {
-	int res = mat[i][j];
-	while (++i < N && ++j < M)
-	{
-		// mismatch found
-		if (mat[i][j] != res)
-		{
-		   return false;
-		}
-
-	}
-
-	// we only reach here when all elements in given diagonal are same
-	return true;
+    //initiallize testing variables from definiations above. 
+    int mat[exampleRows][exampleCols] = example;
+    int Rows = exampleRows;
+    int Cols = exampleCols;
+    bool result = checkMatrix(mat, Rows, Cols);
+    printf("%s\n", result ? "true" : "false");
 }
-
-// Function to check whether given matrix is a Toeplitz matrix or not
-bool isToepliz(int mat[N][M])
+bool checkMatrix (int mat[exampleRows][exampleCols], int rowSize, int colSize)
 {
-	// do for each element in first row
-	for (int i = 0; i < M; i++)
-	{
-		// check descending diagonal starting from position (0, j) in the matrix
-		if (!checkDiagonal(mat, 0, i))
-		{
-		   return false;
-		}
-
-	}
-
-	// do for each element in first column
-	for (int i = 1; i < N; i++)
-	{
-		// check descending diagonal starting from position (i, 0) in the matrix
-		if (!checkDiagonal(mat, i, 0))
-		{
-		   return false;
-		}
-
-	}
-
-	// we only reach here when each descending diagonal from left to right is same
-	return true;
+    //Dont need to check the first row or column
+    for (int currentRow = 1; currentRow < rowSize; currentRow++)
+    {
+        for (int currentCol = 1; currentCol < colSize; currentCol++)
+        {
+            if (mat[currentRow][currentCol] != mat[currentRow - 1][currentCol - 1])
+            {
+                return false;
+            }
+        }
+    }
+    return true;
 }
-
-
-int main()
-{
-	int mat[N][M] =
-	{
-		{ 6, 7, 8, 9 },
-		{ 4, 6, 7, 8 },
-		{ 1, 4, 6, 7 },
-		{ 0, 1, 4, 6 },
-		{ 2, 0, 1, 4 }
-	};
-
-	if (isToepliz(mat))
-	{
-	   printf("Matrix is a Toepliz\n ");
-	}
-	else
-	{
-	   printf("Matrix is not a Toepliz\n ");
-	}
-	return 0;
-}
-
