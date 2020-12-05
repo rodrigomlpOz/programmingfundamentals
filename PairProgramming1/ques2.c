@@ -1,11 +1,11 @@
-/* Write a program in C to display the pattern like right angle triangle with a number 
+/*  Write a program in C to display the pattern like right angle triangle using an asterisk. 
 
 The pattern like :
 
-1
-12
-123
-1234
+*
+**
+***
+****
 
 */
 
@@ -14,12 +14,11 @@ The pattern like :
 
 int main()
 {
-   int i,j,rows;
-   rows = get_int("Input number of rows : \n");
-   for(i=1;i<=rows;i++)
+   int rows = get_int("Input no. of rows:\n");
+   for(int i=1;i<=rows;i++)
    {
-	   for(j=1;j<=i;j++)
-	      printf("%d",j);
+	for(int j=1;j<=i;j++)
+	   printf("*");
 	   printf("\n");
    }
 }

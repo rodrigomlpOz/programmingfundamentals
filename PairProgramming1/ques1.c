@@ -1,29 +1,16 @@
-/*  Write a program in C to display the pattern like right angle triangle using an asterisk. 
-
-The pattern like :
-
-*
-**
-***
-****
-
-*/
+/* Write a C program to find the sum of the number from 1 to 10 using for loops. */
 
 #include <stdio.h>
-#include <cs50.h>
-
-int main()
+void main()
 {
-   int i,j,rows;
-   rows = get_int("Input no. of rows:\n");
-   //controls rows
-   for(i=1;i<=rows;i++)
-   {
-	//control columns
-   	for(j=1;j<=i;j++)
-   	{
-   	  printf("*");
-   	}
-	printf("\n");
-   }
+    int sum = 0;
+
+    printf("The first 10 natural number is :\n");
+ 
+    for (int j = 1; j <= 10; j++)
+    {
+        sum = sum + j;
+        printf("%d ",j);    
+    }
+    printf("\nThe Sum is : %d\n", sum);
 }
