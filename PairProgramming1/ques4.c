@@ -14,11 +14,11 @@ The pattern like :
 
 int main()
 {
-   int i,j,rows,k=1;
+   int k=1;
    rows = get_int("Input number of rows :\n ");
-   for(i=1;i<=rows;i++)
+   for(int i=1;i<=rows;i++)
    {
-	   for(j=1;j<=i;j++)
+	   for(int j=1;j<=i;j++)
 	      printf("%d ",k++);
 	   printf("\n");
    }
