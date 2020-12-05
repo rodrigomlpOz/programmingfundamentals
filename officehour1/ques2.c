@@ -14,11 +14,10 @@ The pattern like :
 
 int main()
 {
-   int i,j,rows;
-   rows = get_int("Input no. of rows:\n");
-   for(i=1;i<=rows;i++)
+   int rows = get_int("Input no. of rows:\n");
+   for(int i=1;i<=rows;i++)
    {
-	for(j=1;j<=i;j++)
+	for(int j=1;j<=i;j++)
 	   printf("*");
 	   printf("\n");
    }
