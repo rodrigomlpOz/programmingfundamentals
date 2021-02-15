@@ -1,32 +1,28 @@
-/*
-a) Ask user for two integer inputs
-b) Write a C function to compute the sum of the two given integer values but
-if the two values are the same, then return triple their sum.
-c) Print the result
-*/
+// Ask user for two inputs
+// Print which is one is the largest
 
-#include <stdio.h>
 #include <cs50.h>
-
-int test(int x, int y);
+#include <stdio.h>
 
 int main(void)
 {
-    int a = get_int("What is the first number?\n");
-    int b = get_int("What is the second number?\n");
+    // Prompt user for x
+    int x = get_int("x: ");
 
-    int result = test(a, b);
-    printf("The result is %d\n", result);
-}
+    // Prompt user for y
+    int y = get_int("y: ");
 
-int test(int x, int y)
-{
-    if (x == y)
+    // Compare x and y
+    if (x < y)
     {
-        return 3*(x+y);
+        printf("x is less than y\n");
+    }
+    else if (x > y)
+    {
+        printf("x is greater than y\n");
     }
     else
     {
-        return x + y;
+        printf("x is equal to y\n");
     }
 }

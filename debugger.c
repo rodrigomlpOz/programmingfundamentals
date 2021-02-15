@@ -15,7 +15,8 @@ void badfun(int myarray[N]) {
 }
 
 int main (void) {
-	int myarray[N], j = 2;
+	int myarray[N]
+	int j = 2;
 	
 	printf("j is %d\n", j);
 	badfun(myarray);

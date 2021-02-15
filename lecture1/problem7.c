@@ -14,9 +14,9 @@ int main(void)
 }       
 int test(int x, int y)
 {
-   int n = 100;
-   int val = abs(x - n);
-   int val2 = abs(y - n);
+   int val = abs(x - 100);
+   int val2 = abs(y - 100);
+   
    if (val == val2)
    {
       return 0;

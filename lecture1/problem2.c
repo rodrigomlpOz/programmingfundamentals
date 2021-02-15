@@ -1,23 +1,29 @@
+//Print "cough" in 3 ways
+//First using 3 printf statements
+// Then using a loop
+// then using a function
+
 #include <stdio.h>
-#include <cs50.h>
+void cough(int x);
 
-/*
-a) Ask user for two integer inputs
-b) Write a C function to compute return true 
-if one of them is 30 or if their sum is 30
-c) Print the result
-*/
-
-int test(int x, int y);
-
-int main(void){
-    int a = get_int("What is the first number?\n");
-    int b = get_int("What is the second number?\n");
-
-    int result = test(a, b);
-    printf("The result is %d\n", result);
-}
-int test(int x, int y)
+int main()
 {
-    return x == 30 || y == 30 || (x + y == 30);
+    printf("Cough\n");
+    printf("Cough\n");
+    printf("Cough\n");
+
+    for (int i = 0; i < 3; i ++)
+    {
+        printf("Cough\n");
+    }
+
+    cough(3);
+}
+
+void cough(int x)
+{
+    for (int i = 0; i < 3; i ++)
+    {
+        printf("Cough\n");
+    }
 }
