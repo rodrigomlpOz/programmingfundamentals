@@ -1,5 +1,5 @@
 /* Write a C program to check if two given 
-non-negative integers have the same last digit. */
+integers have the same last digit. */
 
 #include <stdio.h>
 #include <stdlib.h>
