@@ -1,5 +1,5 @@
 // Ask user for two inputs
-// Print which is one is the largest
+// Print which is one of them is the largest
 
 #include <cs50.h>
 #include <stdio.h>
