@@ -1,4 +1,4 @@
-// Ask user for two inputs
+// Ask user for two integer inputs
 // Print which is one of them is the largest
 
 #include <cs50.h>
