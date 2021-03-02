@@ -5,13 +5,13 @@
 #include <stdio.h>
 
 void addOne(int* ptr) {
-  (*ptr)++; // adding 1 to *ptr
+  *ptr = *ptr + 1 // adding 1 to *ptr
 }
 
 int main()
 {
-  int* p, i = 10;
-  p = &i;
+  int i = 10;
+  int *p = &i;
   addOne(p);
 
   printf("%d", *p); // 11
