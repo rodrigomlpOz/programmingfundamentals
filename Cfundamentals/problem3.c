@@ -1,6 +1,6 @@
 /*
 a) Ask user for two integer inputs
-b) Write a C function to compute the sum of the two given integer values but
+b) Write a C function to return the sum of the two given integer values but
 if the two values are the same, then return triple their sum.
 c) Print the result
 */

@@ -4,7 +4,8 @@
 // Keep looping until user inputs positive value
 
 
-// Abstraction and scope
+// Create a function that keeps asking a user for an positive value
+// Return the number to main and print it
 
 #include <cs50.h>
 #include <stdio.h>

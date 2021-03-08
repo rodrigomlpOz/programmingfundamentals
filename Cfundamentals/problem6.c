@@ -1,4 +1,4 @@
-// Write a C program to check two given integers whether either of them is in the range 100..200 inclusive.
+// Write a C program to check if two  integers are in the range 100..200 inclusive.
 
 #include <stdio.h>
 

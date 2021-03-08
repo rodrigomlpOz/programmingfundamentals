@@ -1,5 +1,5 @@
 //Create an array of 5 integers
-//Create a pointers that ponts to 3 element
+//Create a pointers that points to 3rd element
 //Print 2,3 and 4th element using pointer arithmentic
 
 #include <stdio.h>
