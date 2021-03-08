@@ -1,27 +1,19 @@
-/* Write a program in C to make such a pattern like right angle triangle with
-  a number which will repeat a number in a row. 
-  
-The pattern like :
-
- 1
- 22
- 333
- 4444  
-  
-  */
+/* Write a C program that accept two integers and return 
+true if either one is 5 or their sum or difference is 5.*/
 
 #include <stdio.h>
-#include <cs50.h>
+#include <stdlib.h>
 
-int main()
+int test(int, int);
+int main(void)
 {
-   int rows = get_int("Input number of rows : ");
-   for(int i=1;i<=rows;i++)
-   {
-	   for(int j=1;j<=i;j++)
-      {
-         printf("%d",i);
-      }
-	  printf("\n");
-   }
+   printf("%d\n",test(5, 4));
+   printf("%d\n",test(4, 3));
+   printf("%d\n",test(1, 4));
+}   
+    
+int test(int x, int y)
+{
+   return x == 5 || y == 5 || x + y == 5 || abs(x - y) == 5;
 }
+

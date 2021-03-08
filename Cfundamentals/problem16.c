@@ -1,28 +1,27 @@
+/* Write a program in C to make such a pattern like right angle triangle with
+  a number which will repeat a number in a row. 
+  
+The pattern like :
+
+ 1
+ 22
+ 333
+ 4444  
+  
+  */
+
 #include <stdio.h>
 #include <cs50.h>
 
-int sum_every_other_digit(long card_num);
-
 int main()
 {
-    int num = get_int("What's your number? \n");
-    int num_digits = sum_every_other_digit(num);
-    printf("Your number has %d digita\n", num_digits);
-}
-
-
-int sum_every_other_digit(long card_num)
-{
-    int isAlternateDigit = false;
-    int sum = 0;
-    while (card_num > 0)
-    {
-        if (isAlternateDigit)
-        {
-            sum += (card_num % 10)
-        }
-        isAlternateDigit = !isAlternateDigit;
-        card_num /= 10;
-    }
-    return sum;
+   int rows = get_int("Input number of rows : ");
+   for(int i=1;i<=rows;i++)
+   {
+	   for(int j=1;j<=i;j++)
+      {
+         printf("%d",i);
+      }
+	  printf("\n");
+   }
 }

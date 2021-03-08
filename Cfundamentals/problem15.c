@@ -1,23 +1,25 @@
+/*  Write a program in C to display the pattern like right angle triangle using an asterisk. 
+
+The pattern like :
+
+*
+**
+***
+****
+
+*/
+
 #include <stdio.h>
 #include <cs50.h>
 
-int get_num_digits(long card_num);
-
 int main()
 {
-    int num = get_int("What's your number? \n");
-    int num_digits = get_num_digits(num);
-    printf("Your number has %d digita\n", num_digits);
-}
-
-
-int get_num_digits(long card_num)
-{
-    int count = 0;
-    while (card_num != 0)
-    {
-        card_num /= 10;
-        count += 1;
-    }
-    return count;
+   int rows = get_int("Input no. of rows:\n");
+   for(int i=1;i<=rows;i++)
+   {
+      for(int j=1;j<=i;j++)
+       {
+           printf("*\n");
+       }
+   }
 }

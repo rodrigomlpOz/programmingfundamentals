@@ -1,26 +1,30 @@
-/* Write a C program to compute the sum of the two given integers.
-If the sum is in the range 10..20 inclusive return 30.*/
+// Create a function
+// This function should return the user input only if it is positive
+// Use do...while
+// Keep looping until user inputs positive value
 
+
+// Abstraction and scope
+
+#include <cs50.h>
 #include <stdio.h>
 
-int test(int, int);
+int get_positive_int(void);
+
 int main(void)
 {
-   printf("%d\n",test(12, 17));
-   printf("%d\n",test(2, 17));
-   printf("%d\n",test(22, 17));
-   printf("%d\n",test(20, 0));
-}   
-    
-int test(int a, int b)
-{
-   if (a + b >= 10 && a + b <= 20)
-   {
-      return 30;
-   }
-   else
-   {
-      return a + b;
-   }
+    int i = get_positive_int();
+    printf("%i\n", i);
 }
 
+// Prompt user for positive integer
+int get_positive_int(void)
+{
+    int n;
+    do
+    {
+        n = get_int("Positive Integer: ");
+    }
+    while (n < 1);
+    return n;
+}

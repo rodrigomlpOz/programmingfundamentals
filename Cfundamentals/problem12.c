@@ -1,25 +1,26 @@
-/*  Write a program in C to display the pattern like right angle triangle using an asterisk. 
-
-The pattern like :
-
-*
-**
-***
-****
-
-*/
+/* Write a C program to compute the sum of the two given integers.
+If the sum is in the range 10..20 inclusive return 30.*/
 
 #include <stdio.h>
-#include <cs50.h>
 
-int main()
+int test(int, int);
+int main(void)
 {
-   int rows = get_int("Input no. of rows:\n");
-   for(int i=1;i<=rows;i++)
+   printf("%d\n",test(12, 17));
+   printf("%d\n",test(2, 17));
+   printf("%d\n",test(22, 17));
+   printf("%d\n",test(20, 0));
+}   
+    
+int test(int a, int b)
+{
+   if (a + b >= 10 && a + b <= 20)
    {
-      for(int j=1;j<=i;j++)
-       {
-           printf("*\n");
-       }
+      return 30;
+   }
+   else
+   {
+      return a + b;
    }
 }
+

@@ -1,32 +1,21 @@
-/*
-Loop through values from 1 to 50 inclusive
-If the current number is divisible by 3, print Fizz
-If the current number is divisible by 5, print Buzz
-If the current number is divisible by both 3 and 5, print FizzBuzz
-Else, print the number
-*/
+/* Write a C program to check if two given 
+integers have the same last digit. */
 
 #include <stdio.h>
+#include <stdlib.h>
 
-int main() {
+int test(int, int);
 
-    for (int i = 0; i <= 50; i++)
-    {
-        if (i % 3 == 0 && i % 5 == 0)
-        {
-            printf("Fizzbuzz\n");
-        }
-        else if (i % 3 == 0)
-        {
-            printf("Fizz\n");
-        }
-        else if (i % 5 == 0)
-        {
-            printf("Buzz\n");
-        }
-        else
-        {
-            printf("%d\n", i);
-        }
-    }
+int main(void)
+{
+   printf("%d\n",test(123, 456));
+   printf("%d\n",test(12, 512));
+   printf("%d\n",test(7, 87));
+   printf("%d\n",test(12, 45));
+
+}       
+int test(int x, int y)
+{
+   return abs(x % 10) == abs(y % 10);
 }
+

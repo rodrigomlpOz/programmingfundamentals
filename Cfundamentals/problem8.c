@@ -1,21 +1,19 @@
-/* Write a C program to check if two given 
-integers have the same last digit. */
+//Ask user for integer input which will be our "change"
+//Use a while loop to determine how many quarters
+//will be given as "change"
 
 #include <stdio.h>
-#include <stdlib.h>
-
-int test(int, int);
+#include <cs50.h>
 
 int main(void)
 {
-   printf("%d\n",test(123, 456));
-   printf("%d\n",test(12, 512));
-   printf("%d\n",test(7, 87));
-   printf("%d\n",test(12, 45));
-
-}       
-int test(int x, int y)
-{
-   return abs(x % 10) == abs(y % 10);
+    int x = get_int("What's your change?\n");
+    int count_of_quarters = 0;
+    while (x > 25)
+    {
+        x -= 25;
+        count_of_quarters += 1;
+    }
+    printf("%d\n", count_of_quarters);
 }
 
