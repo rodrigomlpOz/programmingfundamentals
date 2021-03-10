@@ -7,8 +7,7 @@ int main()
  
     for (int j = 1; j <= 10; j++)
     {
-        sum = sum + j;
-        printf("%d ",j);    
+        sum = sum + j;  
     }
     printf("\nThe Sum is : %d\n", sum);
 }
