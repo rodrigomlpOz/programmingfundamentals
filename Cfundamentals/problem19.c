@@ -1,3 +1,10 @@
+/*
+    Ask the user for an integer input
+    Create a function that sums every other digit of this integer
+    Return the result and print it
+
+*/
+
 #include <stdio.h>
 #include <cs50.h>
 
