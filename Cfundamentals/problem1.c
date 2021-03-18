@@ -1,6 +1,7 @@
-// Ask user for two integer inputs
-// Print which one of them is the largest
-
+/*
+Ask user for two integers
+Print which one of them is the largest
+*/
 #include <cs50.h>
 #include <stdio.h>
 
