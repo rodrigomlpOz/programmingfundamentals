@@ -1,7 +1,13 @@
-/* Write a program in C to make such a pattern like right angle triangle with number increased by 1. 
+/* 
 
-The pattern like :
 
+Write a program in C to make  a pattern like the triangle below. 
+Ask the user for the number of rows
+Print the patter below with whatever many rows the user inputted.
+
+Example:
+
+rows = 4
    1
    2 3
    4 5 6
@@ -14,11 +20,11 @@ The pattern like :
 
 int main()
 {
-   int k=1;
+   int k = 1;
    rows = get_int("Input number of rows :\n ");
-   for(int i=1;i<=rows;i++)
+   for(int i = 1;i <= rows;i++)
    {
-	   for(int j=1;j<=i;j++)
+	   for(int j = 1;j <= i;j++)
        {
            printf("%d ",k);
            k++;
