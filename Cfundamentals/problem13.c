@@ -1,5 +1,14 @@
-/* Write a C program that accept two integers and return 
-true if either one is 5 or their sum or difference is 5.*/
+/* 
+
+   Write a C program that accepts two integers and return 
+   true if:
+     a) either one of them is 5 
+     b) or if their sum is 5
+     c) or if their difference is 5.
+   otherwise, return False
+   Call the function with different inputs and print the results
+   
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
