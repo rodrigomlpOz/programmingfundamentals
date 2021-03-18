@@ -1,4 +1,7 @@
-/* Write a C program to find the sum of the number from 1 to 10 using for loops. */
+/* 
+   Write a C program to find the sum of the number from 1 to 10 using for loops.
+   Print the sum at the end of the program
+*/
 
 #include <stdio.h>
 int main()
