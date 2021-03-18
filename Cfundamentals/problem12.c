@@ -1,5 +1,9 @@
-/* Write a C program to compute the sum of the two given integers.
-If the sum is in the range 10..20 inclusive return 30.*/
+/* 
+  Write a C program to compute the sum of the two integer inputs.
+  However, if the sum is in the range 10..20 inclusive return 30 instead.
+  Call the function with multiple inputs and print the results.
+  
+*/
 
 #include <stdio.h>
 
