@@ -1,5 +1,7 @@
-// Ask user for integer input
-// Print if input is even or odd
+/*
+   Ask user for an integer input
+   Print even if the input is even or odd if the input is odd
+*/
 
 // Calculates a remainder
 #include <cs50.h>
