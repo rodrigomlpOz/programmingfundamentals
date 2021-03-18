@@ -1,3 +1,9 @@
+/*
+Ask the user for an integer
+Create a function that calculates the number of digits for this integer
+Return the result and print it
+*/
+
 #include <stdio.h>
 #include <cs50.h>
 
