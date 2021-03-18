@@ -1,5 +1,11 @@
-/* Write a C program to check if two given 
-integers have the same last digit. */
+/* 
+
+Write a C program to check if two integer 
+integers have the same last digit.
+
+Call the function with multiple inputs and print the results
+
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
