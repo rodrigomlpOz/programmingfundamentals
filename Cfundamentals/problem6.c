@@ -1,5 +1,7 @@
-// Write a C program to check if two  integers are in the range 100..200 inclusive.
-
+/*
+   Write a C program that checks if two integers are in the range 100..200 inclusive. 
+   Call the function 3 times with different inputs and print the results.
+*/
 #include <stdio.h>
 
 int test(int, int);
