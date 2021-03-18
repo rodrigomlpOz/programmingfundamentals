@@ -3,8 +3,8 @@
 
 /*
 a) Ask user for two integer inputs
-b) Write a C function to compute return true 
-if one of them is 30 or if their sum is 30
+b) Write a C function that returns true 
+if one of the inputs is 30 or if the sum of the inputs is 30. Return false otherwise.
 c) Print the result
 */
 
