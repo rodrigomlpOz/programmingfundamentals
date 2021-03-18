@@ -1,10 +1,6 @@
-// Create a function
-// This function should return the user input only if it is positive
-// Use do...while
-// Keep looping until user inputs positive value
-
-
-// Create a function that keeps asking a user for an positive value
+// Create a function that asks the user for an input
+// The function should keep asking the user until the input is positive
+// HINT: Use do...while
 // Return the number to main and print it
 
 #include <cs50.h>
