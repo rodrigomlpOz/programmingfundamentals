@@ -1,5 +1,8 @@
-/* Write a C program to check which number nearest to the value 100 among two
-given integers. Return 0 if the two numbers are equal. */
+/* 
+  Write a C program to check which number nearest to the value 100 among two integer inputs. 
+  Return 0 if the two numbers are equal. 
+  Call the function with different inputs and print the results
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
