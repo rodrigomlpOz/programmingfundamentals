@@ -1,5 +1,7 @@
+
 // Ask user for two integer inputs
 // Print YES if they are equal, NO otherwise
+
 
 #include <cs50.h>
 #include <stdio.h>

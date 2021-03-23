@@ -1,3 +1,4 @@
+
 //Print the following sequence of number: 0 + 2 + 4 + 6 .... 98 + 100 using while loops
 #include <stdio.h>
 

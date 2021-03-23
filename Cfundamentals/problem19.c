@@ -7,6 +7,7 @@
 // Create a function that keeps asking a user for an positive value
 // Return the number to main and print it
 
+
 #include <cs50.h>
 #include <stdio.h>
 
@@ -26,6 +27,6 @@ int get_positive_int(void)
     {
         n = get_int("Positive Integer: ");
     }
-    while (n < 1);
+    while (n);
     return n;
 }

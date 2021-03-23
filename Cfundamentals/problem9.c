@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Create a function that prints Hello
 #include <stdio.h>
 

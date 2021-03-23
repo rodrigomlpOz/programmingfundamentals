@@ -1,4 +1,5 @@
 //Print numbers from 1 to 100 using a while loop 
+
 #include <stdio.h>
 
 int main(void)
