@@ -1,6 +1,7 @@
 //Ask user for integer input which will be called "change"
 //Use a while loop to determine how many quarters
 //will be given as "change"
+// Example: 76 as changes uses 3 quarters. 29 as change uses 1 quarter.
 
 #include <stdio.h>
 #include <cs50.h>
