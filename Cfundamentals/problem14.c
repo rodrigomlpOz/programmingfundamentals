@@ -1,32 +1,23 @@
+#include <stdio.h>
+#include <cs50.h>
+
 /*
-Loop through values from 1 to 50 inclusive
-If the current number is divisible by 3, print Fizz
-If the current number is divisible by 5, print Buzz
-If the current number is divisible by both 3 and 5, print FizzBuzz
-Else, print the number
+a) Ask user for two integer inputs
+b) Write a C function to compute return true 
+if one of them is 30 or if their sum is 30
+c) Print the result
 */
 
-#include <stdio.h>
+int test(int x, int y);
 
-int main() {
+int main(void){
+    int a = get_int("What is the first number?\n");
+    int b = get_int("What is the second number?\n");
 
-    for (int i = 0; i <= 50; i++)
-    {
-        if (i % 3 == 0 && i % 5 == 0)
-        {
-            printf("Fizzbuzz\n");
-        }
-        else if (i % 3 == 0)
-        {
-            printf("Fizz\n");
-        }
-        else if (i % 5 == 0)
-        {
-            printf("Buzz\n");
-        }
-        else
-        {
-            printf("%d\n", i);
-        }
-    }
+    int result = test(a, b);
+    printf("The result is %d\n", result);
+}
+int test(int x, int y)
+{
+    return x == 30 || y == 30 || (x + y == 30);
 }

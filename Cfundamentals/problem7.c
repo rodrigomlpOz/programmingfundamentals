@@ -1,22 +1,12 @@
-// Ask user for integer input
-// Print if input is even or odd
-
-// Calculates a remainder
-#include <cs50.h>
+//Print numbers from 100 to 0 (backwards) using while loops
 #include <stdio.h>
 
 int main(void)
 {
-    // Prompt user for integer
-    int n = get_int("n: ");
-
-    // Check parity of integer
-    if (n % 2 == 0)
+    int counter = 100;
+    while (counter >= 0)
     {
-        printf("even\n");
-    }
-    else
-    {
-        printf("odd\n");
+        printf("%i\n", counter);
+        counter -= 1;
     }
 }

@@ -1,23 +1,19 @@
+//Ask user for integer input which will be called "change"
+//Use a while loop to determine how many quarters
+//will be given as "change"
+
 #include <stdio.h>
 #include <cs50.h>
 
-int get_num_digits(long card_num);
-
-int main()
+int main(void)
 {
-    int num = get_int("What's your number? \n");
-    int num_digits = get_num_digits(num);
-    printf("Your number has %d digita\n", num_digits);
-}
-
-
-int get_num_digits(long card_num)
-{
-    int count = 0;
-    while (card_num != 0)
+    int x = get_int("What's your change?\n");
+    int count_of_quarters = 0;
+    while (x >= 25)
     {
-        card_num /= 10;
-        count += 1;
+        x -= 25;
+        count_of_quarters += 1;
     }
-    return count;
+    printf("%d\n", count_of_quarters);
 }
+

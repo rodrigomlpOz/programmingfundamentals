@@ -1,26 +1,29 @@
-/* Write a C program to compute the sum of the two given integers.
-If the sum is in the range 10..20 inclusive return 30.*/
+//Print "cough" in 3 ways
+//First using 3 printf statements
+// Then using a loop
+// then using a function
 
 #include <stdio.h>
+void cough(int x);
 
-int test(int, int);
-int main(void)
+int main()
 {
-   printf("%d\n",test(12, 17));
-   printf("%d\n",test(2, 17));
-   printf("%d\n",test(22, 17));
-   printf("%d\n",test(20, 0));
-}   
-    
-int test(int a, int b)
-{
-   if (a + b >= 10 && a + b <= 20)
-   {
-      return 30;
-   }
-   else
-   {
-      return a + b;
-   }
+    printf("Cough\n");
+    printf("Cough\n");
+    printf("Cough\n");
+
+    for (int i = 0; i < 3; i ++)
+    {
+        printf("Cough\n");
+    }
+
+    cough(3);
 }
 
+void cough(int x)
+{
+    for (int i = 0; i < 3; i ++)
+    {
+        printf("Cough\n");
+    }
+}

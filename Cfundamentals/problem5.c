@@ -1,13 +1,12 @@
-/* Write a C program to find the sum of the number from 1 to 10 using for loops. */
-
+//Print numbers from 1 to 100 using a while loop 
 #include <stdio.h>
-int main()
+
+int main(void)
 {
-    int sum = 0;
- 
-    for (int j = 1; j <= 10; j++)
+    int counter = 0;
+    while (counter <= 100)
     {
-        sum = sum + j;  
+        printf("%i\n", counter);
+        counter += 1;
     }
-    printf("\nThe Sum is : %d\n", sum);
 }

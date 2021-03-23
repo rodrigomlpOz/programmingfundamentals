@@ -1,31 +1,14 @@
-// Create a function
-// This function should return the user input only if it is positive
-// Use do...while
-// Keep looping until user inputs positive value
-
-
-// Create a function that keeps asking a user for an positive value
-// Return the number to main and print it
-
-#include <cs50.h>
+//Create a function that prints Hello
 #include <stdio.h>
 
-int get_positive_int(void);
+void say_hello(void);
 
 int main(void)
 {
-    int i = get_positive_int();
-    printf("%i\n", i);
+    say_hello();
 }
 
-// Prompt user for positive integer
-int get_positive_int(void)
+void say_hello()
 {
-    int n;
-    do
-    {
-        n = get_int("Positive Integer: ");
-    }
-    while (n < 1);
-    return n;
+    printf("hello\n");
 }

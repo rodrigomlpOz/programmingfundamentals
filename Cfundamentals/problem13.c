@@ -1,19 +1,32 @@
-/* Write a C program that accept two integers and return 
-true if either one is 5 or their sum or difference is 5.*/
+/*
+a) Ask user for two integer inputs
+b) Write a C function to return the sum of the two given integer values but
+if the two values are the same, then return triple their sum.
+c) Print the result
+*/
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <cs50.h>
 
-int test(int, int);
+int test(int x, int y);
+
 int main(void)
 {
-   printf("%d\n",test(5, 4));
-   printf("%d\n",test(4, 3));
-   printf("%d\n",test(1, 4));
-}   
-    
-int test(int x, int y)
-{
-   return x == 5 || y == 5 || x + y == 5 || abs(x - y) == 5;
+    int a = get_int("What is the first number?\n");
+    int b = get_int("What is the second number?\n");
+
+    int result = test(a, b);
+    printf("The result is %d\n", result);
 }
 
+int test(int x, int y)
+{
+    if (x == y)
+    {
+        return 3*(x+y);
+    }
+    else
+    {
+        return x + y;
+    }
+}

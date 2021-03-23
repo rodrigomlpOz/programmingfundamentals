@@ -1,21 +1,20 @@
-/* Write a C program to check if two given 
-integers have the same last digit. */
-
+//Create a function that returns the double of a number. Call the function multiple times. Print the result
 #include <stdio.h>
-#include <stdlib.h>
 
-int test(int, int);
+int double_num(int x);
 
 int main(void)
 {
-   printf("%d\n",test(123, 456));
-   printf("%d\n",test(12, 512));
-   printf("%d\n",test(7, 87));
-   printf("%d\n",test(12, 45));
+   int result = double_num(4);
+   printf("%i\n", result);
 
-}       
-int test(int x, int y)
-{
-   return abs(x % 10) == abs(y % 10);
+   printf("%i\n", double_num(5));
+   printf("%i\n", double_num(6));
+   printf("%i\n", double_num(7));
 }
 
+
+int double_num(int x)
+{
+    return 2*x;
+}

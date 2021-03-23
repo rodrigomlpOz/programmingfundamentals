@@ -1,19 +1,24 @@
-//Ask user for integer input which will be our "change"
-//Use a while loop to determine how many quarters
-//will be given as "change"
+// Ask user for two integer inputs
+// Print YES if they are equal, NO otherwise
 
-#include <stdio.h>
 #include <cs50.h>
+#include <stdio.h>
 
 int main(void)
 {
-    int x = get_int("What's your change?\n");
-    int count_of_quarters = 0;
-    while (x > 25)
-    {
-        x -= 25;
-        count_of_quarters += 1;
-    }
-    printf("%d\n", count_of_quarters);
-}
+    // Prompt user for x
+    int x = get_int("x: ");
 
+    // Prompt user for y
+    int y = get_int("y: ");
+
+    // Compare x and y
+    if (x == y)
+    {
+        printf("YES\n");
+    }
+    else
+    {
+        printf("NO\n");
+    }
+}

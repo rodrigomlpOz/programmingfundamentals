@@ -1,28 +1,31 @@
-#include <stdio.h>
+// Create a function
+// This function should return the user input only if it is positive
+// Use do...while
+// Keep looping until user inputs positive value
+
+
+// Create a function that keeps asking a user for an positive value
+// Return the number to main and print it
+
 #include <cs50.h>
+#include <stdio.h>
 
-int sum_every_other_digit(long card_num);
+int get_positive_int(void);
 
-int main()
+int main(void)
 {
-    int num = get_int("What's your number? \n");
-    int num_digits = sum_every_other_digit(num);
-    printf("Your number has %d digita\n", num_digits);
+    int i = get_positive_int();
+    printf("%i\n", i);
 }
 
-
-int sum_every_other_digit(long card_num)
+// Prompt user for positive integer
+int get_positive_int(void)
 {
-    int isAlternateDigit = false;
-    int sum = 0;
-    while (card_num > 0)
+    int n;
+    do
     {
-        if (isAlternateDigit)
-        {
-            sum += (card_num % 10)
-        }
-        isAlternateDigit = !isAlternateDigit;
-        card_num /= 10;
+        n = get_int("Positive Integer: ");
     }
-    return sum;
+    while (n < 1);
+    return n;
 }

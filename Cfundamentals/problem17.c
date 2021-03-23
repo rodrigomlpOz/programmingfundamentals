@@ -1,28 +1,22 @@
-/* Write a program in C to make such a pattern like right angle triangle with number increased by 1. 
+// Ask user for integer input
+// Print if input is even or odd
 
-The pattern like :
-
-   1
-   2 3
-   4 5 6
-   7 8 9 10
-
-*/
-
-#include <stdio.h>
+// Calculates a remainder
 #include <cs50.h>
+#include <stdio.h>
 
-int main()
+int main(void)
 {
-   int k=1;
-   rows = get_int("Input number of rows :\n ");
-   for(int i=1;i<=rows;i++)
-   {
-	   for(int j=1;j<=i;j++)
-       {
-           printf("%d ",k);
-           k++;
-       }
-	   printf("\n");
-   }
+    // Prompt user for integer
+    int n = get_int("n: ");
+
+    // Check parity of integer
+    if (n % 2 == 0)
+    {
+        printf("even\n");
+    }
+    else
+    {
+        printf("odd\n");
+    }
 }

@@ -1,25 +1,13 @@
-/*  Write a program in C to display the pattern like right angle triangle using an asterisk. 
-
-The pattern like :
-
-*
-**
-***
-****
-
-*/
+/* Write a C program to find the sum of the number from 1 to 10 using for loops. */
 
 #include <stdio.h>
-#include <cs50.h>
-
 int main()
 {
-   int rows = get_int("Input no. of rows:\n");
-   for(int i=1;i<=rows;i++)
-   {
-      for(int j=1;j<=i;j++)
-       {
-           printf("*\n");
-       }
-   }
+    int sum = 0;
+ 
+    for (int j = 1; j <= 10; j++)
+    {
+        sum = sum + j;  
+    }
+    printf("\nThe Sum is : %d\n", sum);
 }
