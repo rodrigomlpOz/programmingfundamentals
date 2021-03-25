@@ -1,6 +1,7 @@
 /*
    Print all letters of the second argument 
-   from the command line
+   from the command line if the number of arguments
+   equals 2
 */
 #include <cs50.h>
 #include <stdio.h>
