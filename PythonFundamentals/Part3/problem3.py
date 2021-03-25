@@ -1,5 +1,5 @@
 #Create a dictionary. Loop over its keys and
-#values
+#values using the .items() function
 thisdict = {
   "brand": "Ford",
   "model": "Mustang",

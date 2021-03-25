@@ -1,5 +1,5 @@
 #Create a dictionary
-#Print its keys and values
+#Print its keys and values without a loop
 
 car = {
 "brand": "Ford",
