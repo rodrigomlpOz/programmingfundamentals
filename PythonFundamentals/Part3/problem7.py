@@ -1,11 +1,12 @@
-#Create a list of strings that contains the name Rodrigo
-#Check if Rodrigo is in the list
-#If he is, print Found, otherwise Not Found.
-# Use the function in
+#Create a dictionary with names and phone numbers
+#Ask user for a name
+#If name in the dictionary, print their phone number
 
-names = ["Bill", "Charlie", "Fred", "George", "Ginny", "Percy", "Rodrigo"]
+people = {
+    "Brian": "+1-617-495-1000",
+    "David": "+1-949-468-2750"
+}
 
-if "Rodrigo" in names:
-    print("Found")
-else:
-    print("Not found")
+name = input("Name: ")
+if name in people:
+    print(f"Number: {people[name]}")

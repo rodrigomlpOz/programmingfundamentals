@@ -1,7 +1,11 @@
-# call the program from the terminal with arguments
-# print the arguments
-from sys import argv
+#Create a list of strings that contains the name Rodrigo
+#Check if Rodrigo is in the list
+#If he is, print Found, otherwise Not Found.
+# Use the function in
 
-for arg in argv:
-    print(arg)
-print(len(argv))
+names = ["Bill", "Charlie", "Fred", "George", "Ginny", "Percy", "Rodrigo"]
+
+if "Rodrigo" in names:
+    print("Found")
+else:
+    print("Not found")

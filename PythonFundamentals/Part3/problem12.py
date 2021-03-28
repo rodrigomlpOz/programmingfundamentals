@@ -1,25 +1,6 @@
-''''
-Store the following DNA sequence in a variable
-
-dna = AAGGTAAGTTTAGAATATATATATAAAAGGTGAGTTAAATAGAATAGGTTAAAATTAAAGGAGATCAGATCAGATCAGATCTATCTATCTATCTATCTATCAGAAAAGAGTAAATAGTTAAAGAGTAAGATATTGAATTAATGGAAAATATTGTTGGGGAAAGGAGGGATAGAAGG
-
-Count how many of the following string
-
-sequence = AT
-
-we have in DNA
-
-'''
-
-def consec_repeats(sequence, dna):
-    i = 0
-    while sequence*(i+1) in dna:
-        i += 1
-    return i
-
-dna = "AAGGTAAGTTTAGAATATATATATATATAAAAGGTGAGTTAAATAGAATAGGTTAAAATTAAAGGAGATCAGATCAGATCAGATCTATCTATCTATCTATCTATCAGAAAAGAGTAAATAGTTAAAGAGTAAGATATTGAATTAATGGAAAATATTGTTGGGGAAAGGAGGGATAGAAGG"
-sequence = "AT"
-
-print(consec_repeats(sequence, dna))
-
+#Create a file called days.txt with days of the week, one at each line
+#Open the file and read its content
+days_file = open('days.txt','r')
+print(days_file.read())
+days_file.close()
 

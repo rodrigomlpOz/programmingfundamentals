@@ -1,13 +1,7 @@
-#Create a list of dictionaries. Print it
+# call the program from the terminal with arguments
+# print the arguments
+from sys import argv
 
-person1 = {
-    "name": "Rodrigo",
-    "age": 28
-}
-person2 = {
-    "name": "Giovanna",
-    "age": 22
-}
-
-l = [person1, person2]
-print(l)
+for arg in argv:
+    print(arg)
+print(len(argv))

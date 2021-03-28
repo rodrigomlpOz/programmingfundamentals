@@ -1,10 +1,13 @@
-from cs50 import get_string
+'''
+Create a dictionary where the keys 
+are numbers between 1 and 15 (both included)
+and the values are square of keys.
 
-people = {
-    "Brian": "+1-617-495-1000",
-    "David": "+1-949-468-2750"
-}
+Print the dictionary
 
-name = get_string("Name: ")
-if name in people:
-    print(f"Number: {people[name]}")
+'''
+
+d=dict()
+for x in range(1,16):
+    d[x]=x**2
+print(d)  
