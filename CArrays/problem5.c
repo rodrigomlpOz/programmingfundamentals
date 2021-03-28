@@ -1,6 +1,6 @@
 /*
     Ask user for their name
-    Print every single character of their name
+    Print every single character of their name with a for loop
 */
 #include <cs50.h>
 #include <stdio.h>

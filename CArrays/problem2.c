@@ -1,6 +1,6 @@
 /*
 Create an array with 10 elements
-Sum the value of all elements
+Sum the value of all elements in the array
 Print the result
 */
 

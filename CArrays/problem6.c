@@ -1,6 +1,7 @@
 /*
     Ask user for their name
-    Print every single ASCII number of letters in their name
+    Print every single ASCII number of the letters in their name
+    using a for loop
 */
 #include <cs50.h>
 #include <stdio.h>
