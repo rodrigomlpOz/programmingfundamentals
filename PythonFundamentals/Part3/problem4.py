@@ -7,4 +7,3 @@ thisdict = {
   "year": 1964
 }
 print(thisdict["model"])
-print(thisdict["year"])

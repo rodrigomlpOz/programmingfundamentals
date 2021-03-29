@@ -1,11 +1,9 @@
-//Create a pointer to an integer
-//Print value that pointer points to using dereferencing
+//Create an integer
+//Grab the address of the integer and dereference it (you should see a integer)
 
 #include <stdio.h>
-int main() {
-   int c = 5;
-   int *p = &c;
-
-   printf("%d", *p);  // 5
-   return 0; 
+int main()
+{
+   int num = 5;
+   printf("%d\n", *&num);
 }

@@ -1,18 +1,30 @@
-//Create an array of 5 integers
-//Create a pointers that points to 3rd element
-//Print 2,3 and 4th element using pointer arithmentic
+//Create a function that swaps two integers
+//Swap by first passes the addresses of the integers
+//Them swap them pack by passing as arguments pointers to the integers
 
 #include <stdio.h>
+
+void swap(int *x, int *y);
+
 int main() {
-  int x[5] = {1, 2, 3, 4, 5};
-  int* ptr;
+  int a = 3;
+  int b = 4;
+  swap(&a, &b);
+  printf("First swap");
+  printf("%d\n", a);
+  printf("%d\n", b);
 
-  // ptr is assigned the address of the third element
-  ptr = &x[2]; 
+  int *r = &a;
+  int *s = &b;
+  swap(r, s);
+  printf("Swap back");
+  printf("%d\n", a);
+  printf("%d\n", b);
+}
 
-  printf("*ptr = %d \n", *ptr);   // 3
-  printf("*(ptr+1) = %d \n", *(ptr+1)); // 4
-  printf("*(ptr-1) = %d", *(ptr-1));  // 2
-
-  return 0;
+void swap(int *x, int *y)
+{
+   int temp = *x;
+   *x = *y;
+   *y = temp;
 }

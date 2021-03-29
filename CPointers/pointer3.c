@@ -1,15 +1,15 @@
-//Print addresses of an array of 4 elements 
+//Create an integer
+//Create a pointer to the integer
+//Print the address of the pointer
+//Print the address of the integer (using the pointer)
+//Print the value of the integer (using the pointer)
 
 #include <stdio.h>
 int main() {
-   int x[4];
-   int i;
+   int num = 5;
+   int *ptr = &num;
 
-   for(i = 0; i < 4; ++i) {
-      printf("%p", &x[i]);
-   }
-
-   printf("Address of array x: %p", x);
-
-   return 0;
+   printf("%p\n", &ptr);
+   printf("%p\n", ptr);
+   printf("%d\n", *ptr);
 }

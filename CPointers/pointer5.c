@@ -1,23 +1,24 @@
-//Create a function to swap two numbers by reference
+//create a pointer that points to an integer
+//pass that pointer to function
+//add one to the value that pointer points to
+
+//Crete an integer
+//Create a pointer to that integer
+//Create a function that takes the pointer as input and adds one to the integer
 
 #include <stdio.h>
-void swap(int *n1, int *n2);
+
+void addOne(int* ptr) {
+  *ptr = *ptr + 1 // adding 1 to *ptr
+}
 
 int main()
 {
-    int num1 = 5, num2 = 10;
+  int i = 10;
+  int *p = &i;
+  addOne(p);
 
-    // address of num1 and num2 is passed
-    swap(&num1, &num2);
-
-    printf("num1 = %d\n", num1);
-    printf("num2 = %d", num2);
-    return 0;
+  printf("%d", *p); // 11
+  return 0;
 }
 
-void swap(int* n1, int* n2)
-{
-    int temp = *n1;
-    *n1 = *n2;
-    *n2 = temp;
-}
