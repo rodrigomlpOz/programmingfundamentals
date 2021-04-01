@@ -1,4 +1,4 @@
-//Delete node from the front of a linkedlist
+//Using linked list from last problem, delete node from the front of a linkedlist
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -32,10 +32,6 @@ int main(void)
 
     // Add number to list
     n = malloc(sizeof(node));
-    if (n == NULL)
-    {
-        return 1;
-    }
     n->number = 2;
     n->next = NULL;
     // Now, we go our first node that list points to, and sets the next pointer
@@ -44,10 +40,6 @@ int main(void)
 
     // Add number to list
     n = malloc(sizeof(node));
-    if (n == NULL)
-    {
-        return 1;
-    }
     n->number = 3;
     n->next = NULL;
     // We can follow multiple nodes with this syntax, using the next pointer
