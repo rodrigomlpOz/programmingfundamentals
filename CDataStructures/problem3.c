@@ -1,4 +1,4 @@
-//Print the values of the nodes in a linked list
+//Using the linkedlist from last problem, print the values of the nodes in a linked list
 
 #include <stdio.h>
 #include <stdlib.h>
