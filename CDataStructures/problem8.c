@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Create a person struct that has as properties:
-//   a) Two pointers to two other "person" structs
-//   b) A char array with two elements called alleles
-// Then create a person with two parents (which are also person structs). 
-// Print one of the parents alleles
+// Using the struct from last problem
+// Free them from memory
 typedef struct person
 {
     struct person *parents[2];
