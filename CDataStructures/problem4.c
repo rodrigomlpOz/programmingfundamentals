@@ -1,4 +1,4 @@
-//Insert node at the front of a linked list
+//Using linkedlist from last problem, insert node at the front of a linked list
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,10 +18,7 @@ int main(void)
 
     // Add number to list
     node *n = malloc(sizeof(node));
-    if (n == NULL)
-    {
-        return 1;
-    }
+    
     n->number = 1;
     n->next = NULL;
     // We create our first node, store the value 1 in it, and leave the next
@@ -30,10 +27,7 @@ int main(void)
 
     // Add number to list
     n = malloc(sizeof(node));
-    if (n == NULL)
-    {
-        return 1;
-    }
+    
     n->number = 2;
     n->next = NULL;
     // Now, we go our first node that list points to, and sets the next pointer
@@ -42,10 +36,7 @@ int main(void)
 
     // Add number to list
     n = malloc(sizeof(node));
-    if (n == NULL)
-    {
-        return 1;
-    }
+    
     n->number = 3;
     n->next = list;
     // We can follow multiple nodes with this syntax, using the next pointer
