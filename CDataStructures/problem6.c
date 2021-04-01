@@ -1,4 +1,4 @@
-//Print the values of the nodes in a linked list
+//Using linkedlist from previous problem, free them from memory
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,10 +20,6 @@ int main(void)
 
     // Add number to list
     node *n = malloc(sizeof(node));
-    if (n == NULL)
-    {
-        return 1;
-    }
     n->number = 1;
     n->next = NULL;
     // We create our first node, store the value 1 in it, and leave the next
@@ -32,10 +28,6 @@ int main(void)
 
     // Add number to list
     n = malloc(sizeof(node));
-    if (n == NULL)
-    {
-        return 1;
-    }
     n->number = 2;
     n->next = NULL;
     // Now, we go our first node that list points to, and sets the next pointer
@@ -44,10 +36,6 @@ int main(void)
 
     // Add number to list
     n = malloc(sizeof(node));
-    if (n == NULL)
-    {
-        return 1;
-    }
     n->number = 3;
     n->next = NULL;
     // We can follow multiple nodes with this syntax, using the next pointer
