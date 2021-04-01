@@ -1,5 +1,5 @@
 //create a pointer that points to an integer
-//pass that pointer to function
+//Pass that pointer to a function
 //add one to the value that pointer points to
 
 //Crete an integer
