@@ -3,7 +3,7 @@
 //Create a new node
 //Make the pointer at index 0 point to this  new node
 //Create a second new node
-//Add this second node at index 0 as well (before first node)
+//Add this second node at index 0 as well (before node you created previously)
 #include <stdlib.h>
 #include <stdio.h>
 
